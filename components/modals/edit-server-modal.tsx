@@ -119,7 +119,6 @@ export const EditServerModal = () => {
                                         <FormItem>
                                             <FormControl>
                                                 <FileUpload
-                                                    canBeDeleted={false}
                                                     endpoint='serverImage'
                                                     value={field.value}
                                                     onChange={field.onChange}
