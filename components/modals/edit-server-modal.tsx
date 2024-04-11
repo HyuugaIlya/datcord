@@ -83,7 +83,7 @@ export const EditServerModal = () => {
     }
 
     const handleClose = () => {
-        // form.reset()
+        form.reset()
         onClose()
     }
 
