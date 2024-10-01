@@ -9,11 +9,13 @@ const nextConfig = {
 
         return config
     },
+    output: 'export',
     images: {
         domains: [
             'uploadthing.com',
             "utfs.io"
-        ]
+        ],
+        unoptimized: true,
     },
 }
 
