@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# README.md
 
-## Getting Started
+## Проект на Next.js с TypeScript
 
-First, run the development server:
+Этот проект создан с использованием Next.js и TypeScript. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Установка
+
+1. Убедитесь, что у вас установлен [Node.js](https://nodejs.org/) (версия 20+)
+
+2. Установите зависимости:
+   ```bash
+   npm install
+   ```
+
+### Доступные команды
+
+- `next dev` – запуск development-сервера на [http://localhost:3000](http://localhost:3000)
+- `next build` – сборка production-версии
+- `next start` – запуск production-сборки
+- `next lint` – проверка кода с ESLint
+
+### Структура проекта
+
+```
+/
+├── app/                # App Router (Next.js 13+)
+├── components/         # React-компоненты
+├── hooks/              # Кастомные хуки
+├── styles/             # Глобальные стили
+├── pages/              # Роут для настройки конфигурации и подключения socket.io
+├── prisma/             # Призма схема для работы с бд
+├── lib/                # Вспомогательные функции
+├── types/              # Глобальные TypeScript-типы
+├── .eslintrc.json      # Конфигурация ESLint
+├── .gitignore          # Игнорируемые файлы для Git
+├── next.config.js      # Конфигурация Next.js
+├── package.json        # Зависимости и скрипты
+├── README.md           # Этот файл
+├── tailwind.config.js  # Конфигурация Tailwind CSS
+├── tailwind.config.js  # Конфигурация Tailwind CSS
+├── README.md           # Этот файл
+└── tsconfig.json       # Конфигурация TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Технологии
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/) – React-фреймворк
+- [TypeScript](https://www.typescriptlang.org/) – Типизированный JavaScript
+- [ZUSTAND](https://zustand.docs.pmnd.rs/getting-started/introduction) – Стейт-менеджер для приложения
+- [Prisma](https://www.prisma.io/) – ORM для работы с БД
+- [React Query](https://tanstack.com/query/v3/docs/framework/react/overview) – Data-fetching библиотека для React с собственным кешированием
+- [ESLint](https://eslint.org/) – Линтер для JavaScript/TypeScript

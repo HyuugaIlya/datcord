@@ -1,9 +1,7 @@
 'use client'
 
-
 import { useState, useEffect } from 'react'
 import { LiveKitRoom, VideoConference } from '@livekit/components-react'
-import { Channel } from '@prisma/client'
 import { useUser } from '@clerk/nextjs'
 import { Loader2 } from 'lucide-react'
 
